@@ -1,0 +1,43 @@
+@font-face {
+  font-family: fuente;
+  src: url(../public/fonts/GRAPHIK-BOLD-TRIAL.OTF);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: fuente;
+}
+
+.container {
+  background-color: #c3fbff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.titulo {
+  color: #000af6;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.input {
+  width: 569px;
+  height: 58px;
+  color: #000;
+  font-family: Graphik Trial;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.lupa {
+  height: 58px;
+  width: 45px;
+}
