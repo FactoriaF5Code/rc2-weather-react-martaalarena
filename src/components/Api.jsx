@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import SearchIcon from "@mui/icons-material/Search";
 import "./Api.css";
+import Icons from "./Icons";
 
 export default function Api() {
   const [search, setSearch] = useState("");
@@ -62,7 +63,7 @@ export default function Api() {
             <div className="card_container">
               <h1 className="city_name">{values.name}</h1>
               <p className="temp">{values.main.temp.tofixed(0)}&deg;</p>
-              {/* <img className="icon" src={} alt="icon" /> */}
+              <img className="icon" src={(Icons(icon))} alt="icon" />
               <div className="footer">
                 <p className="temp_minmax">{values.main.temp_min.tofixed(0)}&deg; | {values.main.temp_max.tofixed(0)}&deg;</p>
                 
