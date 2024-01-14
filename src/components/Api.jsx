@@ -7,7 +7,8 @@ export default function Api() {
   const [search, setSearch] = useState("oviedo");
   const [values, setValues] = useState("");
   const [icon, setIcon] = useState("");
-  const key = `a259fc7cb99fb6a5662bfe50c2ddeef0`;
+
+  const key = "a259fc7cb99fb6a5662bfe50c2ddeef0"
   const URL = `https://api.openweathermap.org/data/2.5/weather?q=${search}&lang=es&units=metric&appid=${key}`;
 
   const getData = async () => {
@@ -39,7 +40,7 @@ export default function Api() {
 
   useEffect(() => {
     getData();
-  },[search]);
+  }, [search]);
 
   return (
     <>
@@ -65,8 +66,7 @@ export default function Api() {
               <img className="icon" src={icons(icon)} alt="icon" />
               <div className="footer">
                 <p className="temp_minmax">
-                  {values.main.temp_min}&deg; |
-                  {values.main.temp_max}&deg;
+                  {values.main.temp_min}&deg; |{values.main.temp_max}&deg;
                 </p>
               </div>
             </div>
