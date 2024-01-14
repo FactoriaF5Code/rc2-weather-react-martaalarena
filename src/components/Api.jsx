@@ -57,16 +57,21 @@ export default function Api() {
             <SearchIcon />
           </button>
         </section>
-      </div>
-      <div className="card">
-        {values ? (
-          <div className="card_container">
-            <h1 className="city_name">{values.name}</h1>
-            <p className="tempeture">{values.main.temp}</p>
-          </div>
-        ) : (
-          <h1></h1>
-        )}
+        <div className="card">
+          {values ? (
+            <div className="card_container">
+              <h1 className="city_name">{values.name}</h1>
+              <p className="temp">{values.main.temp.tofixed(0)}&deg;</p>
+              {/* <img className="icon" src={} alt="icon" /> */}
+              <div className="footer">
+                <p className="temp_minmax">{values.main.temp_min.tofixed(0)}&deg; | {values.main.temp_max.tofixed(0)}&deg;</p>
+                
+              </div>
+            </div>
+          ) : (
+            <h1>{"city not found"}</h1>
+          )}
+        </div>
       </div>
     </>
   );

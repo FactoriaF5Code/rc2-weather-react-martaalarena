@@ -1,7 +1,15 @@
+import { Thunderstorm } from "@mui/icons-material";
 
-function icons() {
+function icons(icon) {
   return (
-    <div>icons</div>
+    switch (icon) {
+        case Thunderstorm:
+            icon
+            break;
+    
+        default:
+            break;
+    }
   )
 }
 
