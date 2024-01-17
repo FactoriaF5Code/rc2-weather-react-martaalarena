@@ -21,8 +21,8 @@ export default function Api() {
           setValues(false);
         } else {
           setValues(data);
-          console.log(data.weather.main);
-          setIcon(data.weather.main);
+          console.log(data.weather[0].main);
+          setIcon(data.weather[0].main);
         }
         // console.log(data)
       })

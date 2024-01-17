@@ -10,7 +10,7 @@
   }
   
   .container {
-    background-color: #c3fbff;
+    background-color:#000af6 ;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -19,7 +19,7 @@
   }
   
   .titulo {
-    color: #000af6;
+    color: #ffff00;
     font-size: 96px;
     font-style: normal;
     font-weight: 700;
